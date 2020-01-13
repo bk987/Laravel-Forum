@@ -1,0 +1,126 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+// Font Icons
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.replies {
+    .reply {
+        margin-bottom: 1.5rem;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.pagination {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.new-reply {
+    margin-top: 3rem;
+}
+
+.best-reply {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tox-tinymce {
+    border-radius: 0.25rem !important;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+trix-editor {
+    border: $border-width solid $input-border-color !important;
+    border-radius: $border-radius !important;
+}
+
+trix-toolbar {
+    .trix-button-group {
+        margin-bottom: 2px !important;
+        border: $border-width solid $input-border-color !important;
+        border-radius: $border-radius !important;
+
+        &.trix-button-group--file-tools {
+            display: none;
+        }
+    }
+
+    .trix-button {
+        border-bottom: 0 !important;
+    }
+}
+
+.font-size-sm {
+    font-size: $font-size-base * 0.875;
+}
+
+.meta {
+    > * {
+        margin-left: 0.5rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    > span {
+        vertical-align: middle;
+    }
+}
+
+.actions {
+    .btn {
+        margin-left: 0.25rem;
+        min-width: 2.125rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .btn-info {
+        color: $white;
+    }
+    .btn-outline-info:hover {
+        color: $white;
+    }
+}
+
+.avatar-upload {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    position: relative;
+
+    input[type="file"] {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        font-size: 0;
+        cursor: pointer;
+    }
+}
+
+::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
+.alert-flash {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+}
