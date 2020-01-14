@@ -35,14 +35,14 @@ export default {
 
     created() {
         axios
-            .get(route("user.notifications", window.App.user.name).url())
+            .get(this.route("user.notifications", window.App.user.name).url())
             .then(response => (this.notifications = response.data));
     },
 
     methods: {
         markAsRead(notification) {
             axios.delete(
-                route("user.notifications.destroy", [
+                this.route("user.notifications.destroy", [
                     window.App.user.name,
                     notification.id
                 ]).url()

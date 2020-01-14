@@ -28,7 +28,7 @@ window.flash = function (message, level = 'success') {
     window.events.$emit('flash', { message, level });
 };
 
-import route from 'ziggy'
+import route from 'ziggy';
 import { Ziggy } from './routes';
 
 Vue.mixin({

@@ -2,7 +2,7 @@
     <div class="card-header bg-transparent border-0 d-flex align-items-center">
         <div class="flex-grow-1">
             <img src="{{ $thread->author->avatar_path }}" alt="{{ $thread->author->name }}" 
-                width="25" height="25" class="mr-2">
+                width="25" height="25" class="rounded mr-2">
 
             <span>
                 <a href="{{ route('profile', $thread->author) }}">{{ $thread->author->name }}</a>
