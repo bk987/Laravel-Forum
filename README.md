@@ -8,9 +8,8 @@ A forum application where users can have discussions about a specific topic, pos
 2. [Vue.js](https://vuejs.org/)
 3. [Bootstrap Sass](https://getbootstrap.com/)
 
-## Demo
+## Preview
 
-[![View Demo](view_demo_button.png)](https://bilalkhalid.com/projects/forum)
-
-
-
+Discussion Forum | 
+------------ | 
+![](project-laravel-forum-2.png) | 
