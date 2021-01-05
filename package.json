@@ -11,7 +11,7 @@
         "routes:generate": "php artisan ziggy:generate resources/js/routes.js"
     },
     "devDependencies": {
-        "axios": "^0.19.1",
+        "axios": "^0.21.1",
         "bootstrap": "^4.0.0",
         "browser-sync": "^2.26.7",
         "browser-sync-webpack-plugin": "^2.2.2",
